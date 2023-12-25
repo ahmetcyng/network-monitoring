@@ -1,0 +1,54 @@
+{
+    "192.168.31.201": {
+        "disk_usage": "12%",
+        "memory": "905",
+        "os": "\"Ubuntu 22.04 LTS\"",
+        "services": {
+            "sshd": {
+                "port": "22",
+                "status": "up"
+            },
+            "vsftpd": {
+                "port": "21",
+                "status": "up"
+            }
+        },
+        "status": "up"
+    },
+    "192.168.31.203": {
+        "disk_usage": "7%",
+        "memory": "1941",
+        "os": "Ubuntu",
+        "services": {
+            "apache2": {
+                "port": "80",
+                "status": "up"
+            },
+            "sshd": {
+                "port": "22",
+                "status": "up"
+            }
+        },
+        "status": "up"
+    },
+    "192.168.31.204": {
+        "disk_usage": "9%",
+        "memory": "1777",
+        "os": "\"CentOS Stream 8\"",
+        "services": {
+            "cupsd": {
+                "port": "1631",
+                "status": "up"
+            },
+            "sshd": {
+                "port": "22",
+                "status": "up"
+            },
+            "systemd": {
+                "port": "111",
+                "status": "up"
+            }
+        },
+        "status": "up"
+    }
+}

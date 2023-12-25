@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>Cluster</title>
+</head>
+<body>
+<div class="container">
+
+    <div class="row gx-5">
+        <div class="col-md text-center p-4">
+            <div class="col-md">
+                <div class="row bg-secondary" style="border-radius: 13px;">
+                    <div class="col">PCS</div>
+                    <div class="col">
+                        <form action="/?app_name=cluster" method="POST">
+                            <input type="submit" name="pcs" class="btn btn-info" value="status">
+                        </form>
+                    </div>
+                    <div class="col">
+                        <form action="/?app_name=cluster" method="POST">
+                            <input type="submit" name="pcs" class="btn btn-success" value="start">
+                        </form>
+                    </div>
+                    <div class="col">
+                        <form action="/?app_name=cluster" method="POST">
+                            <input type="submit" name="pcs" class="btn btn-primary" value="standby">
+                        </form>
+                    </div>
+                    <div class="col">
+                        <form action="/?app_name=cluster" method="POST">
+                            <input type="submit" name="pcs" class="btn btn-danger" value="unstandby">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="row gx-5">
+        <div class="col-md-6 text-center p-4">
+            <div class="row">
+                <div class="col bg-light" style="border-radius: 13px;">
+                    <div class="row">
+                        <div class="col">Pcsd</div>
+                        <div class="col">
+                            <form action="/?app_name=cluster" method="POST">
+                                <input type="submit" name="pcsd" class="btn btn-info" value="status">
+                            </form>
+                        </div>
+                        <div class="col">
+                            <form action="/?app_name=cluster" method="POST">
+                                <input type="submit" name="pcsd" class="btn btn-info" value="start">
+                            </form>
+                        </div>
+                        <div class="col">
+                            <form action="/?app_name=cluster" method="POST">
+                                <input type="submit" name="pcsd" class="btn btn-info" value="stop">
+                            </form>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">Pacemaker</div>
+                        <div class="col">
+                            <form action="/?app_name=cluster" method="POST">
+                                <input type="submit" name="pacemaker" class="btn btn-info" value="status">
+                            </form>
+                        </div>
+                        <div class="col">
+                            <form action="/?app_name=cluster" method="POST">
+                                <input type="submit" name="pacemaker" class="btn btn-info" value="start">
+                            </form>
+                        </div>
+                        <div class="col">
+                            <form action="/?app_name=cluster" method="POST">
+                                <input type="submit" name="pacemaker" class="btn btn-info" value="stop">
+                            </form>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">Corosync</div>
+                        <div class="col">
+                            <form action="/?app_name=cluster" method="POST">
+                                <input type="submit" name="corosync" class="btn btn-info" value="status">
+                            </form>
+                        </div>
+                        <div class="col">
+                            <form action="/?app_name=cluster" method="POST">
+                                <input type="submit" name="corosync" class="btn btn-info" value="start">
+                            </form>
+                        </div>
+                        <div class="col">
+                            <form action="/?app_name=cluster" method="POST">
+                                <input type="submit" name="corosync" class="btn btn-info" value="stop">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6 text-center p-4">
+            <div class="row">
+                <div class="col bg-info" style="border-radius: 13px;">
+                    <div class="row">
+                        <div class="col">scheduler</div>
+                        <div class="col">
+                            <form action="/?app_name=cluster" method="POST">
+                                <input type="submit" name="scheduler" class="btn btn-success" value="enable">
+                            </form>
+                        </div>
+                        <div class="col">
+                            <form action="/?app_name=cluster" method="POST">
+                                <input type="submit" name="scheduler" class="btn btn-danger" value="disable">
+                            </form>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">response</div>
+                        <div class="col">
+                            <form action="/?app_name=cluster" method="POST">
+                                <input type="submit" name="response" class="btn btn-success" value="enable">
+                            </form>
+                        </div>
+                        <div class="col">
+                            <form action="/?app_name=cluster" method="POST">
+                                <input type="submit" name="response" class="btn btn-danger" value="disable">
+                            </form>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">statistic</div>
+                        <div class="col">
+                            <form action="/?app_name=cluster" method="POST">
+                                <input type="submit" name="statistic" class="btn btn-success" value="enable">
+                            </form>
+                        </div>
+                        <div class="col">
+                            <form action="/?app_name=cluster" method="POST">
+                                <input type="submit" name="statistic" class="btn btn-danger" value="disable">
+                            </form>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">geo2G</div>
+                        <div class="col">
+                            <form action="/?app_name=cluster" method="POST">
+                                <input type="submit" name="geo2G" class="btn btn-success" value="enable">
+                            </form>
+                        </div>
+                        <div class="col">
+                            <form action="/?app_name=cluster" method="POST">
+                                <input type="submit" name="geo2G" class="btn btn-danger" value="disable">
+                            </form>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">geo3G</div>
+                        <div class="col">
+                            <form action="/?app_name=cluster" method="POST">
+                                <input type="submit" name="geo3G" class="btn btn-success" value="enable">
+                            </form>
+                        </div>
+                        <div class="col">
+                            <form action="/?app_name=cluster" method="POST">
+                                <input type="submit" name="geo3G" class="btn btn-danger" value="disable">
+                            </form>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">geo4G</div>
+                        <div class="col">
+                            <form action="/?app_name=cluster" method="POST">
+                                <input type="submit" name="geo4G" class="btn btn-success" value="enable">
+                            </form>
+                        </div>
+                        <div class="col">
+                            <form action="/?app_name=cluster" method="POST">
+                                <input type="submit" name="geo4G" class="btn btn-danger" value="disable">
+                            </form>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">BSCMOD</div>
+                        <div class="col">
+                            <form action="/?app_name=cluster" method="POST">
+                                <input type="submit" name="BSCMOD" class="btn btn-success" value="enable">
+                            </form>
+                        </div>
+                        <div class="col">
+                            <form action="/?app_name=cluster" method="POST">
+                                <input type="submit" name="BSCMOD" class="btn btn-danger" value="disable">
+                            </form>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">RNCMOD</div>
+                        <div class="col">
+                            <form action="/?app_name=cluster" method="POST">
+                                <input type="submit" name="RNCMOD" class="btn btn-success" value="enable">
+                            </form>
+                        </div>
+                        <div class="col">
+                            <form action="/?app_name=cluster" method="POST">
+                                <input type="submit" name="RNCMOD" class="btn btn-danger" value="disable">
+                            </form>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">MMEMOD</div>
+                        <div class="col">
+                            <form action="/?app_name=cluster" method="POST">
+                                <input type="submit" name="MMEMOD" class="btn btn-success" value="enable">
+                            </form>
+                        </div>
+                        <div class="col">
+                            <form action="/?app_name=cluster" method="POST">
+                                <input type="submit" name="MMEMOD" class="btn btn-danger" value="disable">
+                            </form>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">NOKMOD</div>
+                        <div class="col">
+                            <form action="/?app_name=cluster" method="POST">
+                                <input type="submit" name="NOKMOD" class="btn btn-success" value="enable">
+                            </form>
+                        </div>
+                        <div class="col">
+                            <form action="/?app_name=cluster" method="POST">
+                                <input type="submit" name="NOKMOD" class="btn btn-danger" value="disable">
+                            </form>
+                        </div>
+                    </div>
+                                        
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>

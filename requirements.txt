@@ -1,0 +1,6 @@
+
+
+######## Gerekli python kütüphaneleri
+
+paramiko
+Flask
